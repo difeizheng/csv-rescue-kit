@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csv-rescue-kit"
+version = "0.1.0"
+description = "Auditable CSV cleanup with a before-and-after report"
+requires-python = ">=3.10"
+
+[project.scripts]
+csv-rescue = "csv_rescue:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
