@@ -1,0 +1,35 @@
+{
+  "source_file": "messy_customers.csv",
+  "cleaned_file": "clean_customers.csv",
+  "delimiter": "','",
+  "columns": [
+    "customer_name",
+    "email",
+    "signup_date",
+    "country"
+  ],
+  "summary": {
+    "input_rows": 6,
+    "output_rows": 4,
+    "empty_rows_removed": 1,
+    "duplicate_rows_removed": 1,
+    "whitespace_cells_trimmed": 3,
+    "emails_normalized": 2,
+    "dates_normalized": 3
+  },
+  "issues_requiring_review": {
+    "invalid_emails": [
+      {
+        "input_row": 4,
+        "value": "not-an-email"
+      }
+    ],
+    "unparsed_dates": [
+      {
+        "input_row": 4,
+        "column": "signup_date",
+        "value": "not-a-date"
+      }
+    ]
+  }
+}
