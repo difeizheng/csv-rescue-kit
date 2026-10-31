@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://learnmilo.com/csv-rescue-kit/sitemap.xml
