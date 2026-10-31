@@ -35,4 +35,4 @@ python -m pytest
 
 ## Service experiment
 
-A fixed-scope, human-reviewed CSV cleanup service using this toolkit is described in [OFFER.md](OFFER.md). No paid orders or revenue are claimed yet.
+A fixed-scope, human-reviewed CSV cleanup service using this toolkit is described in [OFFER.md](OFFER.md). To discuss a redacted sample, [open a public service inquiry](https://github.com/difeizheng/csv-rescue-kit/issues/new?template=service-inquiry.yml); never post sensitive data. No paid orders or revenue are claimed yet.
