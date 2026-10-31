@@ -27,6 +27,19 @@ python csv_rescue.py examples/messy_customers.csv \
 
 The command prints the summary and writes both deliverables. The included example contains fictional data only.
 
+## Consolidate Excel workbooks
+
+Merge the active sheet from multiple `.xlsx` files, retain selected columns, normalize dates, remove exact duplicates, and produce a review report. This command requires `openpyxl`; the CSV-only command has no third-party runtime dependencies.
+
+```bash
+python excel_consolidate.py examples/workbooks/*.xlsx \
+  --columns name,date,amount \
+  --output examples/consolidated_master.xlsx \
+  --report examples/consolidation_report.json
+```
+
+The included four workbooks contain fictional data. Regenerate them with `python examples/build_sample_workbooks.py`. Column names are normalized before matching, and every requested column must exist in every source workbook.
+
 ## Development check
 
 ```bash
