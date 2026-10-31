@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Human-reviewed CSV cleanup and Excel workbook consolidation with an auditable before-and-after report.">
+  <title>CSV Rescue — Clean data, clear evidence</title>
+  <style>
+    :root { color-scheme: light; --ink:#17221c; --muted:#56645b; --paper:#f5f7f2; --card:#fff; --green:#176b46; --line:#dce4dd; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif; color:var(--ink); background:var(--paper); }
+    main { width:min(1060px,92%); margin:auto; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:28px 0; gap:20px; }
+    nav strong { letter-spacing:-.02em; }
+    a { color:var(--green); text-underline-offset:3px; }
+    .button { display:inline-block; padding:12px 18px; border-radius:8px; color:#fff; background:var(--green); text-decoration:none; font-weight:700; }
+    .secondary { color:var(--green); background:transparent; border:1px solid var(--green); margin-left:8px; }
+    .hero { padding:70px 0 54px; max-width:790px; }
+    .eyebrow { color:var(--green); font-weight:700; text-transform:uppercase; letter-spacing:.1em; font-size:13px; }
+    h1 { font-size:clamp(38px,6vw,68px); line-height:1.05; letter-spacing:-.05em; margin:14px 0 24px; }
+    h2 { letter-spacing:-.025em; margin-top:0; }
+    .lead { font-size:20px; color:var(--muted); max-width:700px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; padding:18px 0 56px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:28px; }
+    .price { font-size:38px; font-weight:800; letter-spacing:-.04em; margin:12px 0; }
+    .price small { font-size:14px; color:var(--muted); font-weight:500; letter-spacing:0; }
+    .proof { border-top:1px solid var(--line); padding:48px 0; display:grid; grid-template-columns:1fr 1fr; gap:36px; }
+    .metric { font-size:32px; font-weight:800; color:var(--green); }
+    .note { color:var(--muted); font-size:14px; }
+    footer { border-top:1px solid var(--line); padding:28px 0 48px; color:var(--muted); }
+    @media (max-width:700px) { .grid,.proof { grid-template-columns:1fr; } .hero { padding-top:38px; } .secondary { margin:10px 0 0; } nav { align-items:flex-start; } }
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Main navigation">
+    <strong>CSV RESCUE</strong>
+    <a href="https://github.com/difeizheng/csv-rescue-kit">View the working toolkit</a>
+  </nav>
+
+  <section class="hero">
+    <div class="eyebrow">CSV cleanup · Excel consolidation</div>
+    <h1>Clean data.<br>Clear evidence.</h1>
+    <p class="lead">Get a cleaned file and a report showing exactly what changed, what was removed, and what still needs your decision. No silent guesses. Your original files stay untouched.</p>
+    <p>
+      <a class="button" href="https://github.com/difeizheng/csv-rescue-kit/issues/new?template=service-inquiry.yml">Discuss a redacted sample</a>
+      <a class="button secondary" href="https://github.com/difeizheng/csv-rescue-kit/tree/main/examples">See before / after examples</a>
+    </p>
+  </section>
+
+  <section class="grid" aria-label="Experimental service packages">
+    <article class="card">
+      <h2>CSV cleanup</h2>
+      <div class="price">$29 <small>experimental fixed price</small></div>
+      <ul>
+        <li>One CSV, up to 10,000 rows and 30 columns</li>
+        <li>Trimming, empty-row and exact-duplicate removal</li>
+        <li>Email and agreed date standardization</li>
+        <li>Audit report and one scoped revision</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h2>Four-workbook merge</h2>
+      <div class="price">$49 <small>experimental fixed price</small></div>
+      <ul>
+        <li>Up to four Excel workbooks with consistent columns</li>
+        <li>One master <code>.xlsx</code> with selected fields</li>
+        <li>Cross-file exact-duplicate removal</li>
+        <li>Per-file reconciliation and exception report</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="proof">
+    <div>
+      <div class="eyebrow">Working demonstration</div>
+      <h2>Verified outputs, not testimonials</h2>
+      <p>The public sample merges four fictional workbooks: eight input rows become six after one empty row and one duplicate are removed. An invalid date and non-numeric amount remain visibly flagged for review.</p>
+      <p><a href="https://github.com/difeizheng/csv-rescue-kit/blob/main/examples/consolidation_report.json">Read the actual report</a></p>
+    </div>
+    <div class="card">
+      <div class="metric">8 / 8</div>
+      <p>Automated tests passed locally before publication.</p>
+      <hr>
+      <p><strong>Safe intake:</strong> start with 10–20 fictional or redacted rows. Never post passwords, keys, payment-card data, government IDs, confidential files, or unredacted personal data in a public issue.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Start with scope, not a sales call</h2>
+    <p>Describe the outcome, approximate file size, and known problem columns. Cleaning rules are confirmed before full delivery. The target is 24 hours after scope and sample confirmation. These are launch experiments; no orders, customers, or revenue are claimed.</p>
+    <a class="button" href="https://github.com/difeizheng/csv-rescue-kit/issues/new?template=service-inquiry.yml">Open a safe service inquiry</a>
+  </section>
+
+  <footer>
+    <p>CSV Rescue Kit · <a href="https://github.com/difeizheng/csv-rescue-kit/blob/main/OFFER.md">Full scope and exclusions</a> · Public demonstration data only</p>
+  </footer>
+</main>
+</body>
+</html>
