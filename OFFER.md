@@ -26,7 +26,7 @@
 
 ## Safe intake
 
-Send a fictional or redacted sample of 10–20 rows first. Do not send passwords, API keys, payment-card data, government IDs, or unredacted sensitive personal data. Agree on the cleaning rules before full delivery.
+[Open a public service inquiry](https://github.com/difeizheng/csv-rescue-kit/issues/new?template=service-inquiry.yml) for initial scope only; private files require a separately agreed private channel. Send a fictional or redacted sample of 10–20 rows first. Do not send passwords, API keys, payment-card data, government IDs, or unredacted sensitive personal data. Agree on the cleaning rules before full delivery.
 
 ## Delivery target
 
