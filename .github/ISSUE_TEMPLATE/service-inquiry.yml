@@ -1,0 +1,33 @@
+name: CSV cleanup inquiry
+description: Ask about the fixed-scope cleanup experiment without posting sensitive data
+title: "[CSV cleanup] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach passwords, keys, payment-card data, government IDs, unredacted personal data, or confidential files. A few fictional or redacted example rows are enough to discuss scope.
+  - type: textarea
+    id: goal
+    attributes:
+      label: What should the cleaned data allow you to do?
+      placeholder: Example: import a customer list without duplicate rows
+    validations:
+      required: true
+  - type: input
+    id: size
+    attributes:
+      label: Approximate rows and columns
+      placeholder: Example: 2,000 rows, 12 columns
+    validations:
+      required: true
+  - type: textarea
+    id: rules
+    attributes:
+      label: Known cleaning rules or problem columns
+      placeholder: Example: standardize signup_date and remove exact duplicate email rows
+  - type: checkboxes
+    id: safe
+    options:
+      - label: I have not included sensitive or confidential data in this public issue.
+        required: true
