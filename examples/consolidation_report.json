@@ -1,0 +1,54 @@
+{
+  "output_file": "consolidated_master.xlsx",
+  "columns": [
+    "name",
+    "date",
+    "amount"
+  ],
+  "summary": {
+    "input_rows": 8,
+    "empty_rows_removed": 1,
+    "duplicate_rows_removed": 1,
+    "output_rows": 6
+  },
+  "per_file": [
+    {
+      "file": "january.xlsx",
+      "sheet": "Sales",
+      "input_rows": 2,
+      "kept_rows": 2
+    },
+    {
+      "file": "february.xlsx",
+      "sheet": "Sales",
+      "input_rows": 2,
+      "kept_rows": 1
+    },
+    {
+      "file": "march.xlsx",
+      "sheet": "Sales",
+      "input_rows": 2,
+      "kept_rows": 2
+    },
+    {
+      "file": "april.xlsx",
+      "sheet": "Sales",
+      "input_rows": 2,
+      "kept_rows": 1
+    }
+  ],
+  "issues_requiring_review": [
+    {
+      "file": "march.xlsx",
+      "row": 2,
+      "issue": "unparsed_date",
+      "value": "not-a-date"
+    },
+    {
+      "file": "march.xlsx",
+      "row": 3,
+      "issue": "non_numeric_amount",
+      "value": "unknown"
+    }
+  ]
+}
