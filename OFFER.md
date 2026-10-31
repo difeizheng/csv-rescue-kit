@@ -17,6 +17,10 @@
 - Agreed date-format standardization
 - Before/after row counts and an audit report
 
+## Four-workbook consolidation option
+
+For up to four Excel workbooks with consistent columns, a fixed **US$49 experimental package** includes one master `.xlsx`, selected columns such as name/date/amount, exact-duplicate removal, and a reconciliation report. The public `excel_consolidate.py` sample demonstrates this workflow using fictional data.
+
 ## Not included
 
 - Guessing missing values or silently correcting uncertain records
